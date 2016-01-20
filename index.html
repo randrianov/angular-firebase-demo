@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="projects">
+<head>
+    <meta charset="UTF-8">
+    <title>angular firebase app</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body ng-controller="SampleCtrl">
+<ul>
+    <li ng-repeat="message in messages">
+        <input ng-model="message.text" ng-change="messages.$save(message)">
+        <button ng-click="messages.$remove(message)">Delete Message</button>
+    </li>
+</ul>
+
+<form ng-submit="addMessage()">
+    <input ng-model="newMessageText" />
+    <button type="submit">Add Message</button>
+</form>
+
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/angular-resource/angular-resource.min.js"></script>
+<script src="bower_components/angular-route/angular-route.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src='bower_components/firebase/firebase.js'></script>
+<script src='bower_components/angularfire/dist/angularfire.js'></script>
+<script src="app.js"></script>
+</body>
+</html>

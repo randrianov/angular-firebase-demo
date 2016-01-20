@@ -1,0 +1,26 @@
+{
+  "name": "angular-firebase-demo",
+  "homepage": "https://github.com/randrianov/angular-firebase-demo",
+  "authors": [
+    "randrianov <raman.andryianau@gmail.com>"
+  ],
+  "description": "sample project",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.4.8",
+    "angular-resource": "~1.4.8",
+    "angular-route": "~1.4.8",
+    "bootstrap": "v4.0.0-alpha.2",
+    "firebase": "~2.3.2",
+    "angularfire": "~1.1.3"
+  }
+}
